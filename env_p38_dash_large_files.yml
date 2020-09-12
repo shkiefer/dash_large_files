@@ -1,0 +1,29 @@
+# The name of the environment matching the repository name
+name: env_p38_dash_large_files
+channels:
+- conda-forge
+- defaults
+# Start with Python and include everything you need
+dependencies:
+- python=3.8
+- pip
+# numerical
+- numpy
+- scipy
+# data / pandas
+- pandas
+# plotly
+- plotly
+# dash and flask
+- dash
+- sqlalchemy
+# movie editing
+- moviepy
+- imageio
+# for windows install imagemagick manually following moviepy instructions: https://zulko.github.io/moviepy/install.html
+#- imagemagick
+- pip:
+  - dash_bootstrap_components
+  - dash-uploader
+  - dash-extensions
+
